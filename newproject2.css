@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top {
+    background: #2c3e50;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .top h1 {
+    color: #fff;
+    margin: 0;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+
+  .card {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    width: 280px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  .card p {
+    margin: 8px 0;
+  }
+
+  .cardh {
+    background: #93755b;
+    color: #fff;
+  }
+
+  #price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  #lm,
+  #lms {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+  }
+
+  #lm:hover,
+  #lms:hover {
+    background: #3498db;
+  }
+
+  .toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .toggle-label {
+    color: #888;
+    margin-right: 8px;
+  }
+
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+  }
+
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.3s;
+  }
+
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  input[type="checkbox"]:checked + .toggle-slider {
+    background-color: #2196f3;
+  }
+
+  input[type="checkbox"]:checked + .toggle-slider:before {
+    transform: translateX(24px);
+  }
+
+  .toggle-text {
+    font-size: 14px;
+    color: #888;
+    margin-left: 8px;
+  }
